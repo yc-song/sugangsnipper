@@ -13,7 +13,7 @@ import time
 from selenium.webdriver.chrome.options import Options
 
 
-def thread_run():
+def main():
     snipping_list = [[[['M2794.001200', '001'], ['031.033', '001', '002', '003'], ['043.071', '003'], ['270.549', '001']],
              'hyeongoon11@snu.ac.kr', 7],[[['M2794.001200', '002']], 'hyeongoon@gmail.com', 12]]
     for jh in range(len(snipping_list)):
@@ -70,6 +70,7 @@ def thread_run():
                             smtp.quit()
             ratio = []
     threading.Timer(60,thread_run).start()
-
-thread_run()
+    
+if __name__ == "__main__":
+    main()
 
